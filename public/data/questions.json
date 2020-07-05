@@ -1,0 +1,172 @@
+[
+  {
+    "id": 139,
+    "category": "JavaScript",
+    "level": "Advanced",
+    "answerType": "Choice",
+    "question": "<p> What kind of information would get logged?</p>\n<pre><code class=\"language-javascript\">fetch(&#39;https://www.website.com/api/user/1&#39;)\n .then(res =&gt; res.json())\n .then(res =&gt; console.log(res))</code></pre>\n",
+    "option1": "The result of the fetch method.",
+    "option2": "The result of the second invocation of the fetch method.",
+    "option3": "The result of the callback in the previous .then().",
+    "option4": "It would always be undefined.",
+    "options": [
+      "The result of the fetch method.",
+      "The result of the second invocation of the fetch method.",
+      "The result of the callback in the previous .then().",
+      "It would always be undefined."
+    ]
+  },
+  {
+    "id": 116,
+    "category": "JavaScript",
+    "level": "Beginner",
+    "answerType": "Choice",
+    "question": "<p>What happens when the following code is executed?</p>\n<pre><code class=\"language-javascript\">function bark() {\n console.log(&quot;Woof!&quot;);\n}\n\nbark.animal = &quot;dog&quot;;</code></pre>\n",
+    "option1": "Nothing happens",
+    "option2": "SyntaxError",
+    "option3": "Woof! is printed in the console",
+    "option4": "ReferenceError",
+    "options": [
+      "Nothing happens",
+      "SyntaxError",
+      "Woof! is printed in the console",
+      "ReferenceError"
+    ]
+  },
+  {
+    "id": 129,
+    "category": "JavaScript",
+    "level": "Intermediate",
+    "answerType": "Choice",
+    "question": "<p>What&#39;s the output?</p>\n<pre><code class=\"language-javascript\">!!null;\n!!&quot;&quot;;\n!!1;</code></pre>\n",
+    "option1": "false true false",
+    "option2": "false false true",
+    "option3": "false true true",
+    "option4": "true true false",
+    "options": [
+      "false true false",
+      "false false true",
+      "false true true",
+      "true true false"
+    ]
+  },
+  {
+    "id": 137,
+    "category": "JavaScript",
+    "level": "Advanced",
+    "answerType": "Choice",
+    "question": "<p>What is the output?</p>\n<pre><code class=\"language-javascript\">async function getData() {\n return await Promise.resolve(&quot;I made it!&quot;);\n}\n\nconst data = getData();\nconsole.log(data);</code></pre>\n",
+    "option1": "\"I made it!\"",
+    "option2": "Promise {<resolved>: \"I made it!\"}",
+    "option3": "Promise {<pending>}",
+    "option4": "undefined",
+    "options": [
+      "\"I made it!\"",
+      "Promise {<resolved>: \"I made it!\"}",
+      "Promise {<pending>}",
+      "undefined"
+    ]
+  },
+  {
+    "id": 141,
+    "category": "General",
+    "level": "Beginner",
+    "answerType": "Choice",
+    "question": "<p>Given the following pseudo code, what is the output of f(30)?</p>\n<pre><code>function f(int n) {\n if (n &lt;= 0) \n return 0;\n else\n return n + f(n - 10);\n\n}\n\nf(30);</code></pre>",
+    "option1": "50",
+    "option2": "51",
+    "option3": "60",
+    "option4": "61",
+    "options": [
+      "50",
+      "51",
+      "60",
+      "61"
+    ]
+  },
+  {
+    "id": 120,
+    "category": "JavaScript",
+    "level": "Advanced",
+    "answerType": "Choice",
+    "question": "<p>How long is <code>cool_secret</code> accessible?</p>\n",
+    "option1": "Forever, the data doesn't get lost.",
+    "option2": "When the user closes the tab.",
+    "option3": "When the user closes the entire browser, not only the tab",
+    "option4": "When the user shuts off their computer.",
+    "options": [
+      "Forever, the data doesn't get lost.",
+      "When the user closes the tab.",
+      "When the user closes the entire browser, not only the tab",
+      "When the user shuts off their computer."
+    ]
+  },
+  {
+    "id": 127,
+    "category": "JavaScript",
+    "level": "Advanced",
+    "answerType": "Choice",
+    "question": "<p>What is the output?</p>\n<pre><code class=\"language-javascript\">(() =&gt; {\n let x, y;\n try {\n throw new Error();\n } catch (x) {\n (x = 1), (y = 2);\n console.log(x);\n }\n console.log(x);\n console.log(y);\n})();</code></pre>\n",
+    "option1": "1 undefined 2",
+    "option2": "undefined undefined undefined",
+    "option3": "1 1 2",
+    "option4": "1 undefined undefined",
+    "options": [
+      "1 undefined 2",
+      "undefined undefined undefined",
+      "1 1 2",
+      "1 undefined undefined"
+    ]
+  },
+  {
+    "id": 108,
+    "category": "Java",
+    "level": "Intermediate",
+    "answerType": "Choice",
+    "question": "<p>What is the output?</p>\n<pre><code>String s = &quot;abc&quot;;\ns = s + 1 + 2;\ns = s + (2 + 2);\ns.concat(&quot;1&quot;).concat(&quot;2&quot;);\ns.concat(&quot;&quot; + 2 + 2);\nSystem.out.print(s);</code></pre>",
+    "option1": "abc124",
+    "option2": "abc34124",
+    "option3": "abc124124",
+    "option4": "abc1241222",
+    "options": [
+      "abc124",
+      "abc34124",
+      "abc124124",
+      "abc1241222"
+    ]
+  },
+  {
+    "id": 112,
+    "category": "JavaScript",
+    "level": "Advanced",
+    "answerType": "Choice",
+    "question": "<p>What is the output?</p>\n<pre><code class=\"language-javascript\">const shape = {\n radius: 10,\n diameter() {\n return this.radius * 2;\n },\n perimeter: () =&gt; 2 * Math.PI * this.radius\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());</code></pre>\n",
+    "option1": "20 62.83185307179586",
+    "option2": "20 NaN",
+    "option3": "20 63",
+    "option4": "NaN 63",
+    "options": [
+      "20 62.83185307179586",
+      "20 NaN",
+      "20 63",
+      "NaN 63"
+    ]
+  },
+  {
+    "id": 113,
+    "category": "JavaScript",
+    "level": "Beginner",
+    "answerType": "Choice",
+    "question": "<p>Which is true?</p>\n<pre><code class=\"language-javascript\">const bird = {\n size: &quot;small&quot;\n};\n\nconst mouse = {\n name: &quot;Mickey&quot;,\n small: true\n};</code></pre>\n",
+    "option1": "mouse.bird.size is not valid",
+    "option2": "mouse[bird.size] is not valid",
+    "option3": "mouse[bird[\"size\"]] is not valid",
+    "option4": "All are valid",
+    "options": [
+      "mouse.bird.size is not valid",
+      "mouse[bird.size] is not valid",
+      "mouse[bird[\"size\"]] is not valid",
+      "All are valid"
+    ]
+  }
+]
